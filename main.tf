@@ -46,6 +46,10 @@ resource "google_storage_bucket" "vault" {
   project       = var.project
   location      = var.location
   force_destroy = var.bucket_force_destroy
+
+  uniform_bucket_level_access {
+    enabled = true
+  }
 }
 
 resource "google_storage_bucket_iam_member" "member" {
