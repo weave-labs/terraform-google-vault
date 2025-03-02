@@ -1,0 +1,6 @@
+name: organizations/650852515909/policies/iam.allowedPolicyMemberDomains
+spec:
+  rules:
+    - values:
+        allowedValues:
+          - "*"
